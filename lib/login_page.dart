@@ -40,8 +40,9 @@ class LoginPage extends StatelessWidget {
                 width: 300,
                 height: 300,
                 fit: BoxFit.fill,
+                repeat: false
               ),
-              LoginScreen()
+              const LoginScreen()
             ],
           ),
         ),

@@ -13,12 +13,14 @@ Future main() async {
         ChangeNotifierProvider(create: (_) => DataModel()),
         ChangeNotifierProvider(create: (_) => ToggleButtonModel())
       ],
-      child: Home(),
+      child: const Home(),
     ),
   );
 }
 
 class Home extends StatelessWidget {
+  const Home({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import '../data/toggle_button_model.dart';
 
 class CustomToggleButton extends StatelessWidget {
+  const CustomToggleButton({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Consumer<ToggleButtonModel>(
@@ -17,7 +19,7 @@ class CustomToggleButton extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(30),
               color: model.isSelected ? Colors.green : Colors.grey[400],
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: Colors.black26,
                   offset: Offset(0, 3),
@@ -28,7 +30,7 @@ class CustomToggleButton extends StatelessWidget {
             ),
             child: Stack(
               children: [
-                Positioned(
+                const Positioned(
                   left: 8,
                   top: 8,
                   bottom: 8,
@@ -45,7 +47,7 @@ class CustomToggleButton extends StatelessWidget {
                     ),
                   ),
                 ),
-                Positioned(
+                const Positioned(
                   right: 8,
                   top: 8,
                   bottom: 8,
@@ -63,7 +65,7 @@ class CustomToggleButton extends StatelessWidget {
                   ),
                 ),
                 AnimatedPositioned(
-                  duration: Duration(milliseconds: 300),
+                  duration: const Duration(milliseconds: 300),
                   curve: Curves.easeInOut,
                   left: model.isSelected ? 70 : 0,
                   top: 4,

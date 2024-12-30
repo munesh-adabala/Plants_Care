@@ -36,7 +36,7 @@ class HomePage extends StatelessWidget {
                 );
               }
           ),
-          Center(child: CustomToggleButton()),
+          const Center(child: CustomToggleButton()),
         ]
         ,
       )

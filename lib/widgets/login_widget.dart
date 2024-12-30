@@ -41,7 +41,7 @@ class _LoginScreenState extends State<LoginScreen> {
           children: <Widget>[
             TextFormField(
               controller: _usernameController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Username',
                 border: OutlineInputBorder(),
               ),
@@ -52,10 +52,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 return null;
               },
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             TextFormField(
               controller: _passwordController,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Password',
                 border: OutlineInputBorder(),
               ),
@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 return null;
               },
             ),
-            SizedBox(height: 16.0),
+            const SizedBox(height: 16.0),
             ElevatedButton(
               onPressed: _login,
               style: ElevatedButton.styleFrom(
@@ -77,7 +77,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12), // Rounded corners
                 ),
-                padding: EdgeInsets.symmetric(horizontal: 32, vertical: 12),
+                padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 12),
                 elevation: 10,
                 shadowColor: Colors.deepPurpleAccent,
               ),
